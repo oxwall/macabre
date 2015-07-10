@@ -2377,15 +2377,14 @@ span.ow_icon {
 
 /* ---- Button List styles ---- */
 
-ul.ow_bl {
+.ow_bl {
 	padding: 0;
 }
-ul.ow_bl li {
-	float: right;
+.ow_bl li {
 	list-style: none;
 	margin-left: 5px;
 }
-ul.ow_bl a {
+.ow_bl a {
 	display: block;
 	background: #ccc;
 	border-radius: 5px;
@@ -2395,7 +2394,7 @@ ul.ow_bl a {
 	padding: 5px 7px;
 	text-decoration: none;
 }
-ul.ow_bl a:hover {
+.ow_bl a:hover {
 	background-color: #999;
 	text-shadow: none;
 	color: #fff;
@@ -5119,9 +5118,6 @@ body.ow input.ow_inprogress {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
-.ow_context_action_value_block.ow_context_action_block .ow_context_action:hover {
-	background: #999;
-}
 a.ow_context_action_value {
 	display: inline-block;
 	padding: 0px 5px 0px 0px;
@@ -5148,7 +5144,7 @@ a.ow_context_action_value {
 	border-bottom-right-radius: 2px;
 }
 .ow_context_action:hover,
-.ow_context_action.active {
+.ow_context_action.active, {
 	cursor: pointer; 
 	background: #434343;
 }
@@ -5186,6 +5182,9 @@ a.ow_context_action_value {
 	padding: 3px 0px;
 	color: #B1B1B1;
 }
+.ow_bl .ow_context_action_list a {
+    background-color: transparent;
+}
 .ow_context_action_list a:hover {
 	text-decoration: none;
 	background: #434343;
@@ -5199,6 +5198,9 @@ a.ow_context_action_value {
 	background: transparent;
 	border-bottom: 1px solid #3F3F3F;
 	margin: 1px 0px 0px;
+}
+.ow_bl .ow_context_action:hover > a {
+    background-color: transparent;
 }
 /* ---- End of Context Action styles ---- */
 
